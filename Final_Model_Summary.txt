@@ -1,0 +1,13 @@
+Final model: Random forest
+Selected feature set: Full
+Test metrics (lakh PKR except R2 and MAPE):
+{
+  "MAE": 3.058118852465396,
+  "RMSE": 13.795788485379179,
+  "R2": 0.8783733188043625,
+  "MAPE_pct": 11.798124808607351
+}
+CV MAE: [3.236849621061, 3.3253229964800557, 3.1633895831193146]
+Top predictive features: engine_capacity, age, model, feature_count, make
+Limitations: 2022 asking prices only; no verified transaction prices, inspection, or seller identity; random split may include similar vehicles; fixed model settings.
+Saved joblib pipeline expects the engineered feature dataframe, not raw advertisements. See notebook for preprocessing and nonnegative clipping.
